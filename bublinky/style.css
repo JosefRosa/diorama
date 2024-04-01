@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background: black
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+#canvas1 {
+background: linear-gradient(green 25%, gray 50%,gray 75%, black 75%);
+filter: blur(10px) contrast(15);
+}
