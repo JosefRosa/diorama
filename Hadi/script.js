@@ -40,21 +40,6 @@ class Root{
         }
     }
  }
- class Flower{
-     constructor(x, y, size){
-        this.x = x;
-        this.y = y;
-        this.size = size;
-        this.cs = Math.random() * 0.3 + 0.2;
-        this.maxFlowerSize = this.site + Math.random() * 180;
-        this.image = new Image();
-        this.frameSize = 100;
-        this.frameY = Math.floor(Math.random() * 3);
-        this.frameX = Math.floor(Math.random() * 3);
-        this-size > 11.5 ? this.willFlower = true : this.willFlower = false;
-        this.angle = 0;
-        this.va = Math.random() * 0.05- 0.025;
-    }
     grow(){
         if(this.size < this.maxFlowerSize && this.willFlower){
             this.size += this.vs; 
