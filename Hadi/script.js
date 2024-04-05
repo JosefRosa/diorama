@@ -37,9 +37,6 @@ class Root{
             ctx.fill();
             ctx.stroke(); 
             requestAnimationFrame(this.update.bind(this));
-        }else{
-            const flower = new Flower(this.x, this.y, this.size);
-            flower.grow();
         }
     }
  }
@@ -51,7 +48,6 @@ class Root{
         this.cs = Math.random() * 0.3 + 0.2;
         this.maxFlowerSize = this.site + Math.random() * 180;
         this.image = new Image();
-        this.image.src = 'emoji.png';
         this.frameSize = 100;
         this.frameY = Math.floor(Math.random() * 3);
         this.frameX = Math.floor(Math.random() * 3);
