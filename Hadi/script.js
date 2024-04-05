@@ -40,20 +40,7 @@ class Root{
         }
     }
  }
-    grow(){
-        if(this.size < this.maxFlowerSize && this.willFlower){
-            this.size += this.vs; 
-            this.angle += this.va;
-            ctx.save();
-            ctx.translate(this.x, this.y);
-            ctx.rotate(this.angle);
-            ctx.restore();
-            ctx.drawImage(this.image,  this.frameSize * this.frameX,this.frameSize * this.frameY , this.frameSize, this.frameSize, 0 - this.size/2, 0 - this.size/2, this.size, this.size);
-            requestAnimationFrame(this.grow.bind(this));    
-        } 
-    }
-
- }
+ 
 window.addEventListener('mousemove', function(e){ 
     if(drawing){
         for(let i =0; i < 3; i++){
